@@ -1,0 +1,59 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /* background: url(food.jpg) no-repeat center ; */
+
+}
+
+.hero-section {
+    background: url(food.jpg) no-repeat center center/cover; 
+    background-size: cover;
+    background-position: center; 
+    color: white;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.search-bar input {
+    background-color: red;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-plan .day {
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-plan .day h4 {
+    font-size: 1.2em;
+}
+
+.meal-plan .day p {
+    color: #888;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+/* 
+.my-image {
+    width: 400px;
+    border: 2px solid blue;
+} */
