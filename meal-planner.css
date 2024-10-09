@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('meal-planning.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo Styles */
+.navbar .logo a {
+    color: pink;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: pink;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: #a4cdf9; 
+    color: white;
+    border-radius: 4px; 
+}
+
+/* Meal Planner Section */
+.container {
+    background-color: rgb(251, 204, 212); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+/* Headings */
+h2, h3 {
+    color: #ffd700;
+}
+
+/* Meal Plan Container */
+.meal-plan {
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+}

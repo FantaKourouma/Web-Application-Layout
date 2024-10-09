@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Planner</title>
+    <link rel="stylesheet" href="meal-planner.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">World Recipes</a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="index.html" href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a class="nav-link" href="meal-planner.html" href="#">Meal Planner</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Meal Planner Section -->
+    <div class="container p-5">
+        <h2 class="text-center mb-5">Weekly Meal Planner</h2>
+        <div class="row">
+            <!-- Days of the week -->
+            <div class="col-md-1"></div>
+            <div class="col-md-2 text-center">
+                <h4>Monday</h4>
+                <div class="meal-plan" id="monday"></div>
+            </div>
+            <div class="col-md-2 text-center">
+                <h4>Tuesday</h4>
+                <div class="meal-plan" id="tuesday"></div>
+            </div>
+            <div class="col-md-2 text-center">
+                <h4>Wednesday</h4>
+                <div class="meal-plan" id="wednesday"></div>
+            </div>
+            <div class="col-md-2 text-center">
+                <h4>Thursday</h4>
+                <div class="meal-plan" id="thursday"></div>
+            </div>
+            <div class="col-md-2 text-center">
+                <h4>Friday</h4>
+                <div class="meal-plan" id="friday"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <h3 class="text-center mt-5">Add Recipe to Meal Plan</h3>
+        <form id="meal-plan-form">
+            <div class="mb-3">
+                <label for="day-select" class="form-label">Select Day</label>
+                <select class="form-select" id="day-select">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="recipe-name" class="form-label">Recipe Name</label>
+                <input type="text" class="form-control" id="recipe-name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add to Meal Plan</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
