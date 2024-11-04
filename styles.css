@@ -1,139 +1,53 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body html{
+body, html {
     font-family: 'Arial', sans-serif;
     height: 100%;
-
 }
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(159, 159, 245); 
-}
-
-/* Logo Styles */
-.navbar .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-}
-
-
-.nav-links a:hover {
-    background-color: #a4cdf9; 
-    color: white;
-    border-radius: 4px; 
-}
-
 
 .hero-section {
-    background: url(food.jpg) no-repeat center center/cover; 
-    background-size: cover;
-    background-position: center; 
-    color: white;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: url('food.jpg') no-repeat center center/cover;
+    height: 100vh;
     position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .search-bar input {
-    background-color: red;
-    width: 50%;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
+    background-color: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.featured-recipes-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    padding-bottom: 30px;
-    background: rgba(255, 255, 255, 0.8);
+/* Recipe Card Customization */
+.card-title {
+    font-weight: bold;
 }
 
-.recipes-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.card{
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+.card-body {
     text-align: center;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
 .btn-primary {
-    background-color: #e8eef6;
+    background-color: #007bff;
     border: none;
     border-radius: 20px;
-    padding: 6px;
+    color: white;
+    padding: 8px 20px;
 }
-/* Footer Styles */
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
 footer {
     background-color: #343a40;
     color: white;
+    font-size: 0.9rem;
 }
