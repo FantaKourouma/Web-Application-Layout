@@ -24,7 +24,6 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Recipe Card Customization */
 .card-title {
     font-weight: bold;
 }
@@ -45,7 +44,6 @@ body, html {
     background-color: #0056b3;
 }
 
-/* Footer */
 footer {
     background-color: #343a40;
     color: white;

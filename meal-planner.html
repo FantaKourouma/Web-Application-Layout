@@ -4,53 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Meal Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="meal-planner.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">World Recipes</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: black;">World Recipes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meal-planner.html">Meal Planner</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a class="nav-link" href="index.html" href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a class="nav-link" href="meal-planner.html" href="#">Meal Planner</a></li>
-            
-        </ul>
     </nav>
 
-    <!-- Meal Planner Section -->
-    <div class="container p-5">
-        <h2 class="text-center mb-5">Weekly Meal Planner</h2>
-        <div class="row">
-            <!-- Days of the week -->
-            <div class="col-md-1"></div>
-            <div class="col-md-2 text-center">
-                <h4>Monday</h4>
-                <div class="meal-plan" id="monday"></div>
+
+    <div class="container p-5 bg-light rounded my-5">
+        <h2 class="text-center mb-5 text-dark">Weekly Meal Planner</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-2 text-center mb-3">
+                <h4 style="color: red;">Monday</h4>
+                <div class="meal-plan p-3" id="monday"></div>
             </div>
-            <div class="col-md-2 text-center">
-                <h4>Tuesday</h4>
-                <div class="meal-plan" id="tuesday"></div>
+            <div class="col-md-2 text-center mb-3">
+                <h4 style="color: red;">Tuesday</h4>
+                <div class="meal-plan p-3" id="tuesday"></div>
             </div>
-            <div class="col-md-2 text-center">
-                <h4>Wednesday</h4>
-                <div class="meal-plan" id="wednesday"></div>
+            <div class="col-md-2 text-center mb-3">
+                <h4 style="color: red;">Wednesday</h4>
+                <div class="meal-plan p-3" id="wednesday"></div>
             </div>
-            <div class="col-md-2 text-center">
-                <h4>Thursday</h4>
-                <div class="meal-plan" id="thursday"></div>
+            <div class="col-md-2 text-center mb-3">
+                <h4 style="color: red;">Thursday</h4>
+                <div class="meal-plan p-3" id="thursday"></div>
             </div>
-            <div class="col-md-2 text-center">
-                <h4>Friday</h4>
-                <div class="meal-plan" id="friday"></div>
+            <div class="col-md-2 text-center mb-3">
+                <h4 style="color: red;">Friday</h4>
+                <div class="meal-plan p-3" id="friday"></div>
             </div>
-            <div class="col-md-1"></div>
         </div>
 
-        <h3 class="text-center mt-5">Add Recipe to Meal Plan</h3>
-        <form id="meal-plan-form">
+        <h3 class="text-center mt-5 text-dark">Add Recipe to Meal Plan</h3>
+        <form id="meal-plan-form" class="p-4">
             <div class="mb-3">
                 <label for="day-select" class="form-label">Select Day</label>
                 <select class="form-select" id="day-select">
@@ -69,6 +70,7 @@
         </form>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

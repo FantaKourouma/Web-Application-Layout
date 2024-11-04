@@ -1,68 +1,57 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('meal-planning.jpg'); 
-    background-size: cover;
-    background-position: center; 
-    color: #ffffff; 
+    background: url('meal-planning.jpg') no-repeat center center/cover;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 20px;
+.navbar .navbar-brand {
+    color: pink;
 }
 
-/* Logo Styles */
-.navbar .logo a {
-    color: pink;
-    text-decoration: none;
-    font-size: 1.5rem;
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffd9e8;
+    color: purple;
+    border-radius: 4px;
+}
+
+.container {
+    background-color: rgba(251, 204, 212, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #ffd700; 
+}
+
+.meal-plan {
+    background-color: pink;
+    border: 1px solid rgba(220, 13, 13, 0.5);
+    border-radius: 5px;
+    min-height: 50px;
+    color: purple;
+}
+
+.form-select, .form-control {
+    background-color: #dde0e3;
+    color: #ee3434;
+}
+
+.btn-primary {
+    background-color: #ff80a5; 
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
     font-weight: bold;
 }
 
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
+.btn-primary:hover {
+    background-color: #ff4d7a;
 }
 
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: pink;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-}
-
-/* Hover effect for links */
-.nav-links a:hover {
-    background-color: #a4cdf9; 
-    color: white;
-    border-radius: 4px; 
-}
-
-/* Meal Planner Section */
-.container {
-    background-color: rgb(251, 204, 212); /* Dark overlay for readability */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners for the container */
-}
-
-/* Headings */
-h2, h3 {
-    color: #ffd700;
-}
-
-/* Meal Plan Container */
-.meal-plan {
-    border: 1px solid rgba(255, 255, 255, 0.5); 
-    border-radius: 5px;
-}
